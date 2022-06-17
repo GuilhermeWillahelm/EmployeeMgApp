@@ -12,13 +12,15 @@ import {MatTableModule} from '@angular/material/table';
 import { HttpClientModule } from '@angular/common/http';
 import { OfficeListComponent } from './office-list/office-list.component';
 import {MatCardModule} from '@angular/material/card';
+import { EmployeeAddComponent } from './employee-add/employee-add.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeListComponent,
     EmployeeDetailComponent,
-    OfficeListComponent
+    OfficeListComponent,
+    EmployeeAddComponent
   ],
   imports: [
     BrowserModule,

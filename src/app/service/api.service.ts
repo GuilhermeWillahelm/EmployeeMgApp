@@ -9,6 +9,7 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
+  //Employees
   getEmployees() {
     return this.http.get<any>(this.apiUrl + 'Employees');
   }
@@ -28,4 +29,31 @@ export class ApiService {
   deleteEmployee(id: number) {
     return this.http.delete(this.apiUrl + `Employees/${id}`);
   }
+
+  //Offices
+  getOffices() {
+    return this.http.get<any>(this.apiUrl + 'Offices');
+  }
+
+  createOffice(data: any) {
+    return this.http.post(this.apiUrl + 'Offices', data);
+  }
+  
+  updateOffice(id: number, data: any) {
+    return this.http.put(this.apiUrl + `Offices/${id}`, data);
+  }
+
+  deleteOffice(id: number) {
+    return this.http.delete(this.apiUrl + `Offices/${id}`);
+  }
+
+  //Users
+  registerUser(data: any) {
+    return this.http.post(this.apiUrl + 'Users', data);
+  }
+
+  loginUser(data: any) {
+    return this.http.post(this.apiUrl + 'Users/LoginUser', data);
+  }
+
 }

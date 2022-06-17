@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="header">
+        <h2>Funcionario</h2>
+    </div>
+<div class="card" style="width: 38rem;">
+    <div class="card-body">
+      <h2 class="card-title">{{employeeData?.fullName}}</h2>
+      <h4 style="font-weight: bold;">Cargo: </h4>
+      <h3 class="card-subtitle mb-2 text-muted">{{employeeData?.officeDto.nameOffice}}</h3>
+      <h4 style="font-weight: bold;">Salario: </h4>
+      <p class="card-text">R$: {{employeeData?.salary}}</p>
+      <h4 style="font-weight: bold;">Data de Admissão:</h4>
+      <p class="card-text"> {{employeeData?.createdDate}}</p>
+      
+    </div>
+  </div>
+    <a href="/" class="btn btn-primary" >
+        Voltar
+    </a>
+  
+</div>
